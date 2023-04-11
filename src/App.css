@@ -1,16 +1,37 @@
 .App {
   text-align: center;
   background: linear-gradient(
-    135deg,
-    #ffb6b9 0%,
-    #ffd3b6 25%,
-    #fdffb6 50%,
-    #b6ffb9 75%,
-    #b6e5ff 100%
+    90deg,
+    #e83c3c 0%,
+    #ff7f50 5%,
+    #ffbf00 10%,
+    #ffdc00 15%,
+    #aaff00 20%,
+    #32cd32 25%,
+    #00bfff 30%,
+    #8a2be2 35%,
+    #e83c3c 40%,
+    #ff7f50 45%,
+    #ffbf00 50%,
+    #ffdc00 55%,
+    #aaff00 60%,
+    #32cd32 65%,
+    #00bfff 70%,
+    #8a2be2 75%,
+    #e83c3c 80%,
+    #ff7f50 85%,
+    #ffbf00 90%,
+    #ffdc00 95%,
+    #aaff00 100%,
+    #203a43 105%,
+    #2c5364 110%,
+    #203a43 115%,
+    #0f2027 120%
   );
 
+  animation: groove 50s ease-in-out infinite;
+
   background-size: 400% 400%;
-  animation: gradient 15s ease-in-out infinite;
   color: #000;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
@@ -25,7 +46,7 @@
   justify-content: center;
 }
 
-@keyframes gradient {
+@keyframes groove {
   0% {
     background-position: 0% 50%;
   }
@@ -54,41 +75,4 @@
 .App-logo {
   height: 10vmin;
   pointer-events: none;
-}
-
-/* login button styles */
-
-.login-button {
-  background-color: #1db954;
-  color: #fff;
-  border: none;
-  border-radius: 50px;
-  padding: 20px 50px;
-  font-size: 16px;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-.login-button:hover {
-  background-color: #1ed760;
-}
-
-.login-button:active {
-  background-color: #1ed760;
-  transform: scale(0.98);
-}
-
-.login-button:focus {
-  outline: none;
-}
-
-.login-button:disabled {
-  background-color: #b3b3b3;
-  cursor: not-allowed;
-}
-
-.login-button a {
-  color: #fff;
-  text-decoration: none;
 }
