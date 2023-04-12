@@ -1,19 +1,19 @@
 import "./App.css";
 
-import LogIn from "./components/LogIn";
+import { Routes, Route } from "react-router-dom";
+
+import LogIn from "./pages/Login/LogIn";
+import Profile from "./pages/Home/Profile";
+import Navigation from "./components/Navigation";
 
 function App() {
   return (
-    <div className="App" style={{ textAlign: "center" }}>
-      <header className="App-header">
-        <img
-          className="App-logo"
-          src="https://storage.googleapis.com/pr-newsroom-wp/1/2018/11/Spotify_Logo_RGB_Green.png"
-          alt="Spotify Logo"
-        />
-        <h1>Stats</h1>
-      </header>
-      <LogIn />
+    <div className="App">
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<LogIn />} />
+        <Route path="/profile" element={<Profile />} />
+      </Routes>
     </div>
   );
 }

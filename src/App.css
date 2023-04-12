@@ -1,36 +1,5 @@
 .App {
   text-align: center;
-  background: linear-gradient(
-    90deg,
-    #e83c3c 0%,
-    #ff7f50 5%,
-    #ffbf00 10%,
-    #ffdc00 15%,
-    #aaff00 20%,
-    #32cd32 25%,
-    #00bfff 30%,
-    #8a2be2 35%,
-    #e83c3c 40%,
-    #ff7f50 45%,
-    #ffbf00 50%,
-    #ffdc00 55%,
-    #aaff00 60%,
-    #32cd32 65%,
-    #00bfff 70%,
-    #8a2be2 75%,
-    #e83c3c 80%,
-    #ff7f50 85%,
-    #ffbf00 90%,
-    #ffdc00 95%,
-    #aaff00 100%,
-    #203a43 105%,
-    #2c5364 110%,
-    #203a43 115%,
-    #0f2027 120%
-  );
-
-  animation: groove 50s ease-in-out infinite;
-
   background-size: 400% 400%;
   color: #000;
   font-family: "Roboto", sans-serif;
@@ -44,6 +13,21 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(29, 185, 84, 0.8) 12%,
+    rgba(18, 163, 84, 0.8) 24%,
+    rgba(0, 0, 0, 0.8) 36%,
+    rgba(0, 0, 0, 0.8) 48%,
+    rgba(29, 185, 84, 0.8) 60%,
+    rgba(0, 0, 0, 0.8) 72%,
+    rgba(18, 163, 84, 0.8) 84%,
+    rgba(0, 0, 0, 0.8) 96%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  background-size: 400% 400%;
+  animation: groove 50s ease-in-out infinite;
 }
 
 @keyframes groove {
@@ -58,7 +42,7 @@
   }
 }
 
-.App-header {
+.logo-container {
   height: 20vh;
   display: flex;
   flex-direction: row;
@@ -75,4 +59,77 @@
 .App-logo {
   height: 10vmin;
   pointer-events: none;
+}
+
+.App-logo:hover {
+  animation: App-logo-spin infinite 20s linear;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 70vh;
+}
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5vh;
+  background-color: #191414;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 50%;
+  color: #fff;
+  list-style: none;
+}
+
+.navigation ul a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #191414;
+  font-weight: bold;
+  font-family: "Spotify Sans", Helvetica, Arial, sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  padding: 0 2rem;
+}
+
+.navigation img {
+  height: 4vmin;
+}
+
+.navigation h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
 }
